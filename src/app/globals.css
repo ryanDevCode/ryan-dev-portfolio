@@ -7,30 +7,30 @@
   --foreground: #18181b;
   --muted: #71717a;
   --muted-foreground: #a1a1aa;
-  
+
   /* Card/Surface colors */
   --card: #ffffff;
   --card-foreground: #18181b;
   --card-border: #e4e4e7;
-  
+
   /* Primary accent */
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
   --primary-hover: #2563eb;
-  
+
   /* Secondary */
   --secondary: #f4f4f5;
   --secondary-foreground: #18181b;
   --secondary-hover: #e4e4e7;
-  
+
   /* Accent for highlights */
   --accent: #6366f1;
   --accent-foreground: #ffffff;
-  
+
   /* Border and ring */
   --border: #e4e4e7;
   --ring: #3b82f6;
-  
+
   /* Gradient colors */
   --gradient-start: #3b82f6;
   --gradient-end: #8b5cf6;
@@ -41,25 +41,25 @@
   --foreground: #fafafa;
   --muted: #a1a1aa;
   --muted-foreground: #71717a;
-  
+
   --card: #18181b;
   --card-foreground: #fafafa;
   --card-border: #27272a;
-  
+
   --primary: #60a5fa;
   --primary-foreground: #09090b;
   --primary-hover: #3b82f6;
-  
+
   --secondary: #27272a;
   --secondary-foreground: #fafafa;
   --secondary-hover: #3f3f46;
-  
+
   --accent: #818cf8;
   --accent-foreground: #09090b;
-  
+
   --border: #27272a;
   --ring: #60a5fa;
-  
+
   --gradient-start: #60a5fa;
   --gradient-end: #a78bfa;
 }
@@ -85,7 +85,7 @@
   --color-ring: var(--ring);
   --color-gradient-start: var(--gradient-start);
   --color-gradient-end: var(--gradient-end);
-  
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -93,6 +93,8 @@
 /* ===== Base Styles ===== */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Account for fixed header */
 }
 
 body {

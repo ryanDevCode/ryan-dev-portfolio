@@ -25,7 +25,7 @@ export function CaseStudyContent({ project }: CaseStudyContentProps) {
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.2),transparent)]" />
                     </div>
 
-                    <Container>
+                    <Container className="relative z-10">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
