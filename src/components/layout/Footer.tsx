@@ -5,9 +5,9 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { Container } from './Container';
 
 const socialLinks = [
-    { href: 'https://github.com', icon: Github, label: 'GitHub' },
-    { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-    { href: 'mailto:hello@example.com', icon: Mail, label: 'Email' },
+    { href: 'https://github.com/ryanDevCode', icon: Github, label: 'GitHub' },
+    { href: 'https://linkedin.com/in/jason-ryan-odvina', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'mailto:odvinajason@gmail.com', icon: Mail, label: 'Email' },
 ];
 
 export function Footer() {

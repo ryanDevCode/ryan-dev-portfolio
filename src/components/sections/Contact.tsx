@@ -47,7 +47,7 @@ export function Contact() {
                             {/* Contact methods */}
                             <div className="space-y-4">
                                 <motion.a
-                                    href="mailto:hello@example.com"
+                                    href="mailto:odvinajason@gmail.com"
                                     className="flex items-center gap-4 p-4 rounded-xl bg-card border border-card-border hover:border-primary/30 transition-colors group"
                                     whileHover={{ x: 4 }}
                                 >
@@ -56,7 +56,7 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <p className="font-medium group-hover:text-primary transition-colors">Email</p>
-                                        <p className="text-sm text-muted">hello@example.com</p>
+                                        <p className="text-sm text-muted">odvinajason@gmail.com</p>
                                     </div>
                                 </motion.a>
 

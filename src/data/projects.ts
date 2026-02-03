@@ -40,9 +40,9 @@ export const experiences: Experience[] = [
     {
         id: '1',
         role: 'Full-Stack Developer',
-        company: 'Tech Startup',
+        company: 'Squadzip',
         location: 'Remote',
-        startDate: '2023',
+        startDate: '2024',
         endDate: 'Present',
         highlights: [
             'Built and maintained React dashboards for internal analytics tools',
@@ -51,22 +51,22 @@ export const experiences: Experience[] = [
             'Collaborated with design team to create responsive, accessible interfaces',
         ],
     },
+    // {
+    //     id: '2',
+    //     role: 'Junior Developer',
+    //     company: 'Web Agency',
+    //     location: 'Hybrid',
+    //     startDate: '2021',
+    //     endDate: '2023',
+    //     highlights: [
+    //         'Contributed to 10+ client projects using React and Rails',
+    //         'Migrated legacy Rails 3 applications to modern versions',
+    //         'Improved page performance through code optimization and caching strategies',
+    //         'Mentored interns on React best practices',
+    //     ],
+    // },
     {
         id: '2',
-        role: 'Junior Developer',
-        company: 'Web Agency',
-        location: 'Hybrid',
-        startDate: '2021',
-        endDate: '2023',
-        highlights: [
-            'Contributed to 10+ client projects using React and Rails',
-            'Migrated legacy Rails 3 applications to modern versions',
-            'Improved page performance through code optimization and caching strategies',
-            'Mentored interns on React best practices',
-        ],
-    },
-    {
-        id: '3',
         role: 'Freelance Developer',
         company: 'Self-Employed',
         location: 'Remote',
@@ -75,7 +75,7 @@ export const experiences: Experience[] = [
         highlights: [
             'Delivered custom web solutions for small businesses',
             'Built responsive landing pages and portfolio sites',
-            'Integrated third-party APIs and payment systems',
+            'Integrated third-party APIs and custom features',
         ],
     },
 ];
@@ -83,18 +83,32 @@ export const experiences: Experience[] = [
 export const skills: Skill[] = [
     // Frontend
     { name: 'React', category: 'frontend' },
+    { name: 'JavaScript', category: 'frontend' },
     { name: 'TypeScript', category: 'frontend' },
     { name: 'Next.js', category: 'frontend' },
     { name: 'Tailwind CSS', category: 'frontend' },
     { name: 'HTML/CSS', category: 'frontend' },
     { name: 'Framer Motion', category: 'frontend' },
+    { name: 'Shadcn UI', category: 'frontend' },
+    { name: 'Lucide React', category: 'frontend' },
+    { name: 'Bootstrap', category: 'frontend' },
+    { name: 'Zurb Foundation', category: 'frontend' },
+    { name: 'Material-UI', category: 'frontend' },
 
     // Backend
     { name: 'Ruby on Rails', category: 'backend' },
+    { name: 'Ruby', category: 'backend' },
+    { name: 'Laravel', category: 'backend' },
+    { name: 'PHP', category: 'backend' },
     { name: 'Node.js', category: 'backend' },
     { name: 'PostgreSQL', category: 'backend' },
     { name: 'REST APIs', category: 'backend' },
     { name: 'Redis', category: 'backend' },
+    { name: 'Sidekiq', category: 'backend' },
+    { name: 'Heroku', category: 'backend' },
+    { name: 'AWS', category: 'backend' },
+    { name: 'Firebase', category: 'backend' },
+
 
     // Tools
     { name: 'Git', category: 'tools' },
