@@ -3,82 +3,87 @@ import { Project, Experience, Skill } from '@/types';
 export const projects: Project[] = [
     {
         slug: 'analytics-dashboard',
-        title: 'Analytics Dashboard',
-        description: 'Real-time analytics dashboard with interactive charts and data visualization for tracking key business metrics.',
-        longDescription: 'A comprehensive analytics dashboard built for a SaaS company to monitor user engagement, revenue metrics, and product usage patterns. The dashboard provides real-time updates and allows users to drill down into specific metrics.',
-        problem: 'The client was using multiple disconnected tools to track their business metrics, leading to fragmented insights and delayed decision-making. They needed a unified dashboard that could aggregate data from various sources and present it in an actionable format.',
-        solution: 'Built a React-based dashboard with modular chart components using Recharts. Implemented WebSocket connections for real-time data updates, custom filtering and date range selection, and exportable reports. The architecture follows a component-based design pattern for easy maintenance and feature additions.',
-        outcome: 'Reduced time spent on manual reporting by 80%. The client now has instant access to all key metrics in one place, enabling faster data-driven decisions. The dashboard handles over 10,000 data points with smooth performance.',
-        techStack: ['React', 'TypeScript', 'Recharts', 'WebSocket', 'Node.js', 'PostgreSQL'],
+        title: 'Internal Analytics Dashboard',
+        description:
+            'Lead development of an internal analytics dashboard for visualizing posts, comments, and engagement metrics.',
+        longDescription:
+            'An internal dashboard built to help teams monitor post and comment activity across the platform. I led the backend design and implementation, focusing on data aggregation, query optimization, and maintainable architecture while supporting frontend visualization requirements.',
+        problem:
+            'The existing system lacked clear visibility into post and comment data. Metrics were scattered across the database, queries were inefficient, and there was no centralized way to analyze trends or engagement.',
+        solution:
+            'Designed and implemented backend data aggregation using Ruby on Rails, optimizing queries to support analytics use cases. Exposed structured data for frontend charts and filters, enabling dynamic dashboards for tracking posts, comments, and related metrics.',
+        outcome:
+            'Delivered a centralized analytics dashboard that provides clear visibility into platform activity. Improved performance and enabled faster iteration on reporting features.',
+        techStack: ['Ruby on Rails 5', 'PostgreSQL', 'React', 'JavaScript'],
         featured: true,
     },
     {
-        slug: 'ecommerce-admin-panel',
-        title: 'E-commerce Admin Panel',
-        description: 'Full-featured admin panel for managing products, orders, and customer data with role-based access control.',
-        longDescription: 'A robust admin panel built for a mid-size e-commerce business to manage their entire product catalog, process orders, handle customer inquiries, and generate business reports.',
-        problem: 'The existing admin interface was outdated, slow, and lacked essential features like bulk operations and proper access control. Staff members were spending excessive time on routine tasks that could be automated.',
-        solution: 'Developed a modern React frontend with a Rails 5 API backend. Implemented role-based access control, bulk product operations, real-time order notifications, and comprehensive search and filtering. Used Sidekiq for background job processing and Redis for caching.',
-        outcome: 'Order processing time reduced by 60%. Staff can now manage 3x more products with the same team size. The system successfully handles Black Friday traffic spikes without performance degradation.',
-        techStack: ['React', 'Ruby on Rails 5', 'PostgreSQL', 'Redis', 'Sidekiq', 'AWS S3'],
+        slug: 'ai-post-summarization',
+        title: 'AI-Powered Post Summarization',
+        description:
+            'Lead development of an AI-powered feature that generates concise summaries for user-generated posts.',
+        longDescription:
+            'An ongoing feature designed to enhance content readability by automatically generating summaries for posts. I owned the technical design and backend integration, ensuring the feature fit seamlessly into the existing Rails application.',
+        problem:
+            'Long-form posts made it difficult for users to quickly understand content. Manual summarization was not scalable and introduced inconsistency.',
+        solution:
+            'Implemented backend logic to prepare post data, integrate AI-generated summaries, and persist results within the existing data model. Ensured the feature aligned with current workflows and could be iterated on safely.',
+        outcome:
+            'Introduced automated post summaries that improve content accessibility and user experience while maintaining system stability.',
+        techStack: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
         featured: true,
     },
     {
-        slug: 'legacy-system-migration',
-        title: 'Legacy System Migration',
-        description: 'Complete migration of a Rails 3 application to Rails 7 with modernized architecture and improved performance.',
-        longDescription: 'A comprehensive migration project to upgrade a legacy Rails 3 application to Rails 7, including database optimizations, API redesign, and frontend modernization.',
-        problem: 'The client had a 10-year-old Rails 3 application that was becoming increasingly difficult to maintain. Security patches were no longer available, hosting costs were rising, and developer productivity was hampered by outdated tooling.',
-        solution: 'Executed a phased migration approach: first upgrading through intermediate Rails versions, then modernizing the database schema, and finally rebuilding the frontend with React. Maintained backward compatibility throughout to ensure zero downtime.',
-        outcome: 'Page load times improved by 70%. The application now runs on modern, supported infrastructure with complete test coverage. Deployment frequency increased from monthly to multiple times per week.',
-        techStack: ['Ruby on Rails 7', 'React', 'PostgreSQL', 'Docker', 'GitHub Actions', 'Heroku'],
-        featured: true,
+        slug: 'legacy-rails-migration',
+        title: 'Legacy Rails Feature Migration',
+        description:
+            'Migration and modernization of legacy Rails 3 features as part of a Rails 5 upgrade.',
+        longDescription:
+            'A focused modernization effort involving the migration of legacy Rails 3 features to Rails 5. The work emphasized maintainability, performance, and minimizing regression risks in a production environment.',
+        problem:
+            'Legacy Rails 3 code was difficult to maintain, prone to performance issues, and incompatible with modern tooling.',
+        solution:
+            'Migrated existing features incrementally, refactored controllers and models, and optimized database queries while ensuring backward compatibility.',
+        outcome:
+            'Stabilized the codebase, improved performance, and enabled continued development on a modern Rails version.',
+        techStack: ['Ruby on Rails 5', 'PostgreSQL', 'ActiveRecord'],
+        featured: false,
     },
 ];
+
 
 export const experiences: Experience[] = [
     {
         id: '1',
-        role: 'Full-Stack Developer',
+        role: 'Web Developer',
         company: 'Squadzip',
         location: 'Remote',
         startDate: '2024',
         endDate: 'Present',
         highlights: [
-            'Built and maintained React dashboards for internal analytics tools',
-            'Developed RESTful APIs using Ruby on Rails 5',
-            'Implemented CI/CD pipelines reducing deployment time by 50%',
-            'Collaborated with design team to create responsive, accessible interfaces',
+            'Acted as lead developer for internal analytics dashboards and AI-powered features',
+            'Designed and built backend data aggregation to support dashboards for posts and comments',
+            'Led the technical design and implementation of an AI-powered post summarization feature',
+            'Maintained and migrated legacy Rails 3 features during the upgrade to Rails 5',
+            'Refactored controllers and models to improve maintainability and readability',
+            'Optimized ActiveRecord queries and resolved N+1 issues to improve performance',
         ],
     },
-    // {
-    //     id: '2',
-    //     role: 'Junior Developer',
-    //     company: 'Web Agency',
-    //     location: 'Hybrid',
-    //     startDate: '2021',
-    //     endDate: '2023',
-    //     highlights: [
-    //         'Contributed to 10+ client projects using React and Rails',
-    //         'Migrated legacy Rails 3 applications to modern versions',
-    //         'Improved page performance through code optimization and caching strategies',
-    //         'Mentored interns on React best practices',
-    //     ],
-    // },
     {
         id: '2',
-        role: 'Freelance Developer',
+        role: 'Freelance Web Developer',
         company: 'Self-Employed',
         location: 'Remote',
-        startDate: '2020',
-        endDate: '2021',
+        startDate: '2022',
+        endDate: '2024',
         highlights: [
-            'Delivered custom web solutions for small businesses',
-            'Built responsive landing pages and portfolio sites',
-            'Integrated third-party APIs and custom features',
+            'Developed and improved web applications for freelance and academic projects',
+            'Implemented frontend components and backend logic based on project requirements',
+            'Debugged, refactored, and delivered features iteratively based on feedback',
         ],
     },
 ];
+
 
 export const skills: Skill[] = [
     // Frontend
