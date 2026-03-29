@@ -21,16 +21,16 @@ export const projects: Project[] = [
         slug: 'ai-post-summarization',
         title: 'AI-Powered Post Summarization',
         description:
-            'Integrated an AI summarization feature into a production Rails app, improving content readability at scale.',
+            'Integrated an asynchronous AI summarization pipeline into a production Rails app using AWS Bedrock and Sidekiq.',
         longDescription:
-            'Designed and implemented the backend pipeline for an AI-powered post summarization feature. I handled prompt preparation, API integration, and persisting results — ensuring the feature fit naturally into the existing data model and could be safely iterated on.',
+            'Designed and implemented an asynchronous backend pipeline for generating AI-powered post summaries. I managed the end-to-end integration, including prompt engineering for AWS Bedrock, background job orchestration with Sidekiq, and robust error handling to ensure high availability.',
         problem:
-            'Long-form posts made it hard for users to scan content quickly. Manual curation wasn\'t viable at scale, and there was no automated solution in place.',
+            'Processing LLM-generated summaries synchronously would block the main request thread, leading to poor user experience. The system needed a scalable way to handle expensive AI API calls without affecting app performance.',
         solution:
-            'Built backend logic to prepare post content, call an external AI API, and store summaries alongside existing records. Structured the implementation to be rollback-safe and testable without disrupting existing workflows.',
+            'Architected a background processing flow using Sidekiq and Redis to handle AWS Bedrock API calls asynchronously. Implemented a state machine to track summary generation and integrated the results into the existing Rails data model.',
         outcome:
-            'Shipped a live AI feature that improved content accessibility with no regressions, establishing a pattern for future AI integrations in the codebase.',
-        techStack: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
+            'Shipped a production-ready AI feature with no performance impact on the main application. Established a reusable pattern for integrating LLMs into the platform’s background processing ecosystem.',
+        techStack: ['Ruby on Rails', 'AWS Bedrock', 'Sidekiq', 'Redis', 'PostgreSQL'],
         featured: true,
     },
     {
@@ -62,7 +62,7 @@ export const experiences: Experience[] = [
         endDate: 'Present',
         highlights: [
             'Led backend development for an internal analytics dashboard, designing aggregation queries and a clean API layer for frontend integration',
-            'Built and shipped an AI-powered post summarization feature, owning backend design, external API integration, and safe data persistence',
+            'Architected and shipped an asynchronous AI-powered post summarization pipeline using AWS Bedrock, Sidekiq, and Redis',
             'Migrated legacy Rails 3 features to Rails 5, refactoring controllers and models while minimizing regression risk in production',
             'Identified and resolved N+1 query issues across multiple modules, improving overall application performance',
             'Refactored existing code for readability and maintainability, reducing complexity in critical parts of the codebase',
@@ -109,6 +109,7 @@ export const skills: Skill[] = [
     { name: 'REST APIs', category: 'backend' },
     { name: 'Redis', category: 'backend' },
     { name: 'Sidekiq', category: 'backend' },
+    { name: 'AWS Bedrock', category: 'backend' },
     { name: 'Heroku', category: 'backend' },
     { name: 'AWS', category: 'backend' },
     { name: 'Firebase', category: 'backend' },
