@@ -5,15 +5,15 @@ export const projects: Project[] = [
         slug: 'analytics-dashboard',
         title: 'Internal Analytics Dashboard',
         description:
-            'Lead development of an internal analytics dashboard for visualizing posts, comments, and engagement metrics.',
+            'Led backend development of an internal dashboard for tracking post and comment engagement across the platform.',
         longDescription:
-            'An internal dashboard built to help teams monitor post and comment activity across the platform. I led the backend design and implementation, focusing on data aggregation, query optimization, and maintainable architecture while supporting frontend visualization requirements.',
+            'Built to give teams real visibility into content activity, this dashboard centralizes post and comment metrics in one place. I owned the backend from data modeling to API design, with a focus on query efficiency and clean architecture that the frontend could build on confidently.',
         problem:
-            'The existing system lacked clear visibility into post and comment data. Metrics were scattered across the database, queries were inefficient, and there was no centralized way to analyze trends or engagement.',
+            'Engagement data was scattered across the database with no unified view. Existing queries were slow and difficult to extend, making reporting both painful and unreliable.',
         solution:
-            'Designed and implemented backend data aggregation using Ruby on Rails, optimizing queries to support analytics use cases. Exposed structured data for frontend charts and filters, enabling dynamic dashboards for tracking posts, comments, and related metrics.',
+            'Designed aggregation logic in Ruby on Rails using optimized ActiveRecord queries, eliminating N+1 issues and structuring the API to support dynamic filters and chart data. Collaborated closely with the frontend team to define clear data contracts.',
         outcome:
-            'Delivered a centralized analytics dashboard that provides clear visibility into platform activity. Improved performance and enabled faster iteration on reporting features.',
+            'Delivered a centralized dashboard that made content metrics actionable. Faster queries and a clean API layer reduced friction for future reporting iterations.',
         techStack: ['Ruby on Rails 5', 'PostgreSQL', 'React', 'JavaScript'],
         featured: true,
     },
@@ -21,31 +21,31 @@ export const projects: Project[] = [
         slug: 'ai-post-summarization',
         title: 'AI-Powered Post Summarization',
         description:
-            'Lead development of an AI-powered feature that generates concise summaries for user-generated posts.',
+            'Integrated an AI summarization feature into a production Rails app, improving content readability at scale.',
         longDescription:
-            'An ongoing feature designed to enhance content readability by automatically generating summaries for posts. I owned the technical design and backend integration, ensuring the feature fit seamlessly into the existing Rails application.',
+            'Designed and implemented the backend pipeline for an AI-powered post summarization feature. I handled prompt preparation, API integration, and persisting results — ensuring the feature fit naturally into the existing data model and could be safely iterated on.',
         problem:
-            'Long-form posts made it difficult for users to quickly understand content. Manual summarization was not scalable and introduced inconsistency.',
+            'Long-form posts made it hard for users to scan content quickly. Manual curation wasn\'t viable at scale, and there was no automated solution in place.',
         solution:
-            'Implemented backend logic to prepare post data, integrate AI-generated summaries, and persist results within the existing data model. Ensured the feature aligned with current workflows and could be iterated on safely.',
+            'Built backend logic to prepare post content, call an external AI API, and store summaries alongside existing records. Structured the implementation to be rollback-safe and testable without disrupting existing workflows.',
         outcome:
-            'Introduced automated post summaries that improve content accessibility and user experience while maintaining system stability.',
+            'Shipped a live AI feature that improved content accessibility with no regressions, establishing a pattern for future AI integrations in the codebase.',
         techStack: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
         featured: true,
     },
     {
         slug: 'legacy-rails-migration',
-        title: 'Legacy Rails Feature Migration',
+        title: 'Legacy Rails Migration',
         description:
-            'Migration and modernization of legacy Rails 3 features as part of a Rails 5 upgrade.',
+            'Migrated and modernized legacy Rails 3 features as part of a production upgrade to Rails 5.',
         longDescription:
-            'A focused modernization effort involving the migration of legacy Rails 3 features to Rails 5. The work emphasized maintainability, performance, and minimizing regression risks in a production environment.',
+            'Part of an ongoing Rails 3-to-5 migration in a live production environment. My work focused on identifying deprecated patterns, refactoring controllers and models, and ensuring each migrated feature remained stable without requiring downtime or data loss.',
         problem:
-            'Legacy Rails 3 code was difficult to maintain, prone to performance issues, and incompatible with modern tooling.',
+            'The legacy codebase had accumulated years of technical debt — outdated conventions, deprecated APIs, and slow queries that made new development risky and slow.',
         solution:
-            'Migrated existing features incrementally, refactored controllers and models, and optimized database queries while ensuring backward compatibility.',
+            'Migrated features incrementally, refactoring controllers, models, and scopes to align with Rails 5 conventions. Optimized ActiveRecord queries and addressed N+1 problems uncovered during the migration.',
         outcome:
-            'Stabilized the codebase, improved performance, and enabled continued development on a modern Rails version.',
+            'Reduced regression risk while improving performance and maintainability, enabling the team to build on a stable, modern foundation.',
         techStack: ['Ruby on Rails 5', 'PostgreSQL', 'ActiveRecord'],
         featured: false,
     },
@@ -61,12 +61,11 @@ export const experiences: Experience[] = [
         startDate: '2024',
         endDate: 'Present',
         highlights: [
-            'Acted as lead developer for internal analytics dashboards and AI-powered features',
-            'Designed and built backend data aggregation to support dashboards for posts and comments',
-            'Led the technical design and implementation of an AI-powered post summarization feature',
-            'Maintained and migrated legacy Rails 3 features during the upgrade to Rails 5',
-            'Refactored controllers and models to improve maintainability and readability',
-            'Optimized ActiveRecord queries and resolved N+1 issues to improve performance',
+            'Led backend development for an internal analytics dashboard, designing aggregation queries and a clean API layer for frontend integration',
+            'Built and shipped an AI-powered post summarization feature, owning backend design, external API integration, and safe data persistence',
+            'Migrated legacy Rails 3 features to Rails 5, refactoring controllers and models while minimizing regression risk in production',
+            'Identified and resolved N+1 query issues across multiple modules, improving overall application performance',
+            'Refactored existing code for readability and maintainability, reducing complexity in critical parts of the codebase',
         ],
     },
     {
@@ -77,9 +76,9 @@ export const experiences: Experience[] = [
         startDate: '2022',
         endDate: '2024',
         highlights: [
-            'Developed and improved web applications for freelance and academic projects',
-            'Implemented frontend components and backend logic based on project requirements',
-            'Debugged, refactored, and delivered features iteratively based on feedback',
+            'Built and delivered web applications end-to-end for independent clients and academic projects',
+            'Implemented features across the full stack — from UI components to backend logic and database queries',
+            'Iterated on projects based on feedback, debugging and refining until requirements were met',
         ],
     },
 ];

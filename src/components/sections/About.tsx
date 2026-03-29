@@ -9,18 +9,18 @@ import { FadeIn } from '@/components/animations/FadeIn';
 const highlights = [
     {
         icon: Code2,
-        title: 'Technical Excellence',
-        description: 'Clean, maintainable code with modern best practices',
+        title: 'Production Experience',
+        description: 'Shipped and maintained features in a live Rails + React application',
     },
     {
         icon: Lightbulb,
-        title: 'Problem Solver',
-        description: 'Finding elegant solutions to complex challenges',
+        title: 'Full-Stack Thinking',
+        description: 'Comfortable across the stack — from database queries to UI components',
     },
     {
         icon: Users,
-        title: 'Collaborative',
-        description: 'Clear communication and team-oriented approach',
+        title: 'Team-Ready',
+        description: 'Used to code reviews, clear communication, and collaborative workflows',
     },
 ];
 
@@ -39,23 +39,22 @@ export function About() {
                         <div className="space-y-6">
                             <p className="text-lg leading-relaxed text-muted">
                                 I&apos;m a <strong className="text-foreground">full-stack web developer</strong> with
-                                hands-on experience building dashboards, analytics tools, and enterprise
-                                applications. My journey started with curiosity and has evolved into a
-                                passion for creating web experiences that are both beautiful and functional.
+                                real production experience. I currently work on a Rails + React application
+                                where I maintain existing features, fix bugs, and help migrate legacy code
+                                into cleaner, more modern implementations.
                             </p>
 
                             <p className="text-lg leading-relaxed text-muted">
-                                I&apos;ve worked with <strong className="text-foreground">React</strong> (including
-                                legacy versions) and <strong className="text-foreground">Ruby on Rails</strong> (3 & 5),
-                                giving me a unique perspective on modernizing codebases and building greenfield
-                                projects alike. I thrive on learning new technologies and finding the right
-                                tool for each job.
+                                I work across the stack — from designing <strong className="text-foreground">ActiveRecord queries
+                                    and REST APIs</strong> in Rails to building <strong className="text-foreground">React components</strong> with
+                                hooks, context, and clean state management. I care about the decisions
+                                behind the code, not just making it work.
                             </p>
 
                             <p className="text-lg leading-relaxed text-muted">
-                                Currently, I&apos;m exploring opportunities for <strong className="text-foreground">freelance
-                                    work, part-time roles, and full-time positions</strong> where I can continue to
-                                grow while delivering real value.
+                                I&apos;m actively looking for <strong className="text-foreground">freelance,
+                                    part-time, or full-time roles</strong> where I can keep growing,
+                                contribute to a real team, and take on more responsibility over time.
                             </p>
                         </div>
                     </FadeIn>

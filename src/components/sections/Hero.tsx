@@ -26,7 +26,7 @@ export function Hero() {
                     >
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm font-medium text-muted">
                             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                            Open to new opportunities
+                            Available for freelance &amp; full-time roles
                         </span>
                     </motion.div>
 
@@ -37,9 +37,10 @@ export function Hero() {
                         transition={{ delay: 0.2, duration: 0.5 }}
                         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
                     >
-                        Building <span className="text-gradient">clean, scalable</span>
+                        Full-stack developer,{' '}
+                        <span className="text-gradient">real production</span>
                         <br />
-                        web applications
+                        experience
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -49,9 +50,9 @@ export function Hero() {
                         transition={{ delay: 0.3, duration: 0.5 }}
                         className="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed"
                     >
-                        Full-stack developer specializing in React and Ruby on Rails.
-                        I transform complex problems into elegant, performant solutions
-                        that help businesses grow.
+                        I build and maintain web applications using React and Ruby on Rails.
+                        I&apos;ve shipped features in production, fixed real bugs, and written
+                        code that other developers have to maintain — and I take that seriously.
                     </motion.p>
 
                     {/* CTAs */}
