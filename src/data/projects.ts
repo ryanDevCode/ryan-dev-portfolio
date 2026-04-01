@@ -3,15 +3,15 @@ import { Project, Experience, Skill } from '@/types';
 export const projects: Project[] = [
     {
         slug: 'analytics-dashboard',
-        title: 'Internal Analytics Dashboard',
+        title: 'Analytics Dashboard',
         description:
-            'Led backend development of an internal dashboard for tracking post and comment engagement across the platform.',
+            'Built the full-stack analytics dashboard for a SaaS platform, enabling subscribed companies to track post and comment engagement in one place.',
         longDescription:
             'Built to give teams real visibility into content activity, this dashboard centralizes post and comment metrics in one place. I owned the backend from data modeling to API design, with a focus on query efficiency and clean architecture that the frontend could build on confidently.',
         problem:
             'Engagement data was scattered across the database with no unified view. Existing queries were slow and difficult to extend, making reporting both painful and unreliable.',
         solution:
-            'Designed aggregation logic in Ruby on Rails using optimized ActiveRecord queries, eliminating N+1 issues and structuring the API to support dynamic filters and chart data. Collaborated closely with the frontend team to define clear data contracts.',
+            'Designed aggregation logic in Ruby on Rails using optimized ActiveRecord queries, eliminating N+1 issues and structuring the API to support dynamic filters and chart data. Built the frontend in React and collaborated with the UI designer to translate designs into a polished, functional interface.',
         outcome:
             'Delivered a centralized dashboard that made content metrics actionable. Faster queries and a clean API layer reduced friction for future reporting iterations.',
         techStack: ['Ruby on Rails 5', 'PostgreSQL', 'React', 'JavaScript'],
@@ -21,15 +21,15 @@ export const projects: Project[] = [
         slug: 'ai-post-summarization',
         title: 'AI-Powered Post Summarization',
         description:
-            'Integrated an asynchronous AI summarization pipeline into a production Rails app using AWS Bedrock and Sidekiq.',
+            'Built a scheduled AI summarization system that automatically generates post summaries based on user-configured frequency, date range, and hashtag targeting.',
         longDescription:
-            'Designed and implemented an asynchronous backend pipeline for generating AI-powered post summaries. I managed the end-to-end integration, including prompt engineering for AWS Bedrock, background job orchestration with Sidekiq, and robust error handling to ensure high availability.',
+            'Designed and implemented an end-to-end AI summarization feature integrated into a production Rails app. Users no longer need to manually filter and review posts to write a conclusion — the system does it automatically on a schedule. Users can configure which posts get summarized by setting a frequency, a date range, and assigning relevant hashtags to their posts, giving them fine-grained control over what gets summarized and when.',
         problem:
-            'Processing LLM-generated summaries synchronously would block the main request thread, leading to poor user experience. The system needed a scalable way to handle expensive AI API calls without affecting app performance.',
+            'Users had to manually filter through posts and reviews to piece together a summary or conclusion — a time-consuming process with no automation in place. There was no structured way to surface insights from large volumes of content.',
         solution:
-            'Architected a background processing flow using Sidekiq and Redis to handle AWS Bedrock API calls asynchronously. Implemented a state machine to track summary generation and integrated the results into the existing Rails data model.',
+            "Built a scheduled background job system using Sidekiq and Redis that triggers AI summary generation via AWS Bedrock at configured intervals. Users can define the frequency and date range for summaries, and use the platform's hashtag system to tag which posts should be included in each summary run. The pipeline handles prompt engineering, async processing, and result storage within the existing Rails data model.",
         outcome:
-            'Shipped a production-ready AI feature with no performance impact on the main application. Established a reusable pattern for integrating LLMs into the platform’s background processing ecosystem.',
+            'Eliminated the need for manual post review by automating summary generation on a configurable schedule. Users gained a flexible, low-effort way to stay on top of content trends using hashtags and frequency settings.',
         techStack: ['Ruby on Rails', 'AWS Bedrock', 'Sidekiq', 'Redis', 'PostgreSQL'],
         featured: true,
     },
@@ -61,8 +61,8 @@ export const experiences: Experience[] = [
         startDate: '2024',
         endDate: 'Present',
         highlights: [
-            'Led backend development for an internal analytics dashboard, designing aggregation queries and a clean API layer for frontend integration',
-            'Architected and shipped an asynchronous AI-powered post summarization pipeline using AWS Bedrock, Sidekiq, and Redis',
+            'Built a full-stack analytics dashboard for a SaaS platform, designing aggregation queries, a clean API layer, and the React frontend in collaboration with the UI designer',
+            'Built a scheduled AI summarization system using AWS Bedrock, Sidekiq, and Redis — allowing users to configure frequency, date range, and hashtag-based post targeting for automated summary generation',
             'Migrated legacy Rails 3 features to Rails 5, refactoring controllers and models while minimizing regression risk in production',
             'Identified and resolved N+1 query issues across multiple modules, improving overall application performance',
             'Refactored existing code for readability and maintainability, reducing complexity in critical parts of the codebase',
