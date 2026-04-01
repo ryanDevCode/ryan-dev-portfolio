@@ -7,7 +7,7 @@ export const projects: Project[] = [
         description:
             'Built the full-stack analytics dashboard for a SaaS platform, enabling subscribed companies to track post and comment engagement in one place.',
         longDescription:
-            'Built to give teams real visibility into content activity, this dashboard centralizes post and comment metrics in one place. I owned the backend from data modeling to API design, with a focus on query efficiency and clean architecture that the frontend could build on confidently.',
+            'Built to give teams real visibility into content activity, this dashboard centralizes post and comment metrics in one place. The backend was built end-to-end — from data modeling to API design, with a focus on query efficiency and clean architecture that the frontend could build on confidently.',
         problem:
             'Engagement data was scattered across the database with no unified view. Existing queries were slow and difficult to extend, making reporting both painful and unreliable.',
         solution:
